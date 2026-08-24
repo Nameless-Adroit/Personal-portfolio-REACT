@@ -1,0 +1,122 @@
+.welcome-message{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 3px;
+    color: rgb(29, 55, 75);
+}
+
+/* --- Shared Section Styles --- */
+.about-section, .form-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+/* group-section styles */
+.group-section {
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.8);
+    background-color: #ddded4;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.group-section > img {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/* --- Leadership Cards --- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #e1e8f5;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 51, 102, 0.1);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;  
+    margin: 0 auto 15px;
+    border: 3px solid #dce8ff;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.card .role {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* --- Contact Table --- */
+.table-section {
+    display: flex;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    min-width: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.contact-table th {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.contact-table td {
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.contact-table td strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #003366;
+    margin-bottom: 7px;
+}

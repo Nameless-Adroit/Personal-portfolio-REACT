@@ -1,0 +1,13 @@
+.back-to-top {
+    text-align: center;
+    margin: 20px 0 50px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #e1e8f5;
+    border-radius: 20px; 
+}
+
+.back-to-top:hover {
+    background: #c5d4ed;
+    text-decoration: none;
+}
