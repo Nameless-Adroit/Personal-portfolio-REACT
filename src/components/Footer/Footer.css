@@ -11,3 +11,25 @@
     background: #c5d4ed;
     text-decoration: none;
 }
+
+/* Social media icons */
+.social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      transition: 0.3s;
+      filter: brightness(0.9);
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
