@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import dorasiaImage from "../../assets/images/dorasia.jpeg";
 import "../../assets/styles/individualPage.css";
 
 export function Dorasia() {
@@ -225,7 +226,7 @@ export function Dorasia() {
           <h2>Gallery</h2>
           <img
             className="lightbox-image"
-            src="../images/ester.jpeg"
+            src={dorasiaImage}
             alt="Profile Photo"
           />
         </div>

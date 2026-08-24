@@ -1,4 +1,8 @@
 import {Link} from "react-router";
+import groupImage from "../../assets/images/Group.jpeg";
+import esterImage from "../../assets/images/ester.jpeg";
+import dorasiaImage from "../../assets/images/dorasia.jpeg";
+import justineImage from "../../assets/images/justine.jpeg";
 import "./HomePage.css";
 
 export function HomePage() {
@@ -14,7 +18,7 @@ export function HomePage() {
 
         {/* Group Section */}
         <section className="group-div">
-          <img src="../assets/Group.jpeg" alt="Group GH Photo" />
+          <img src={groupImage} alt="Group GH Photo" />
           <h4>Group GH</h4>
           <p>
             Below is a crew of members who have effectively participated in making this possible.
@@ -27,17 +31,17 @@ export function HomePage() {
           <h2 className="div-title">Group Members</h2>
           <div className="cards">
             <div className="card">
-              <img src="images/justine.jpeg" alt="Justine Mwala" />
+              <img src={justineImage} alt="Justine Mwala" />
               <h3>Justine Mwala</h3>
               <p className="role">Group Leader</p>
             </div>
             <div className="card">
-              <img src="images/dorasia.jpeg" alt="Dorasia Luvanda" />
+              <img src={dorasiaImage} alt="Dorasia Luvanda" />
               <h3>Dorasia Luvanda</h3>
               <p className="role">Group Member</p>
             </div>
             <div className="card">
-              <img src="images/ester.jpeg" alt="Ester Kabuka" />
+              <img src={esterImage} alt="Ester Kabuka" />
               <h3>Ester Kabuka</h3>
               <p className="role">Group Member</p>
             </div>

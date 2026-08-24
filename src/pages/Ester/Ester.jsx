@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import esterImage from "../../assets/images/ester.jpeg";
 import "../../assets/styles/individualPage.css";
 
 export function Ester() {
@@ -225,7 +226,7 @@ export function Ester() {
           <h2>Gallery</h2>
           <img
             className="lightbox-image"
-            src="../images/ester.jpeg"
+            src={esterImage}
             alt="Profile Photo"
           />
         </div>

@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import justineImage from "../../assets/images/justine.jpeg";
 import "../../assets/styles/individualPage.css";
 
 export function Justine() {
@@ -205,7 +206,7 @@ export function Justine() {
           <h2>Gallery</h2>
           <img
             className="lightbox-image"
-            src="../images/justine.jpeg"
+            src={justineImage}
             alt="Profile Photo"
           />
         </div>
