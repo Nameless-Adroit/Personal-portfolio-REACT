@@ -1,4 +1,6 @@
 import { Link } from "react-router";
+import { skills } from "./JustineSkills";
+import {SkillCard} from "../../components/SkillCard/SkillCard";
 import justineImage from "../../assets/images/justine.jpeg";
 import "../../assets/styles/individualPage.css";
 
@@ -49,29 +51,9 @@ export function Justine() {
         <h2>My Skills</h2>
         <p> Click a card to see specific details.</p>
         <div className="skills-grid">
-          <div className="skill-card">
-            <div className="skill-label">System Administration</div>
-            <div className="skill-list">Linux · Windows · Docker</div>
-            <div className="skill-details hidden">
-              I manage and automate mission-critical server environments, specializing in security hardening, shell scripting, and resource optimization within virtualized Linux systems.
-            </div>
-          </div>
-          <div className="skill-card">
-            <div className="skill-label">Web Development</div>
-            <div className="skill-list">PHP · Frameworks · API</div>
-            <div className="skill-details hidden">
-              I architect scalable web applications, integrating responsive front-end interfaces with robust database-driven back-ends to deliver high-performance, user-centric digital solutions.
-            </div>
-          </div>
-          <div className="skill-card">
-            <div className="skill-label">Networking</div>
-            <div className="skill-list">
-              TCP/IP · IP Addressing · Network Configuration
-            </div>
-            <div className="skill-details hidden">
-              I design and secure complex network infrastructures, optimizing data transmission protocols and hardening perimeters to ensure high availability and resilient connectivity.
-            </div>
-          </div>
+          {skills.map((skill, index) => (
+            <SkillCard key={index} skills={skill} />
+          ))}
         </div>
       </section>
 

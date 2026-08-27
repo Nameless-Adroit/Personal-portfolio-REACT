@@ -1,0 +1,41 @@
+/* ── Interests pills ── */
+.interests-grid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.interest-pill {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 22px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column; /* Stacks the hidden text below the interest name */
+  gap: 6px;
+  cursor: pointer;
+  transition:
+    border-color 0.25s,
+    color 0.25s,
+    transform 0.25s;
+}
+.interest-pill:hover {
+  border-color: var(--accent2);
+  transform: translateY(-2px);
+}
+
+/* Title typography inside the pill */
+.interest-title {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+/* Sub-details text style */
+.interest-details {
+  font-size: 0.82rem;
+  color: var(--muted);
+  border-top: 1px dashed var(--border);
+  padding-top: 6px;
+  margin-top: 2px;
+  line-height: 1.4;
+}

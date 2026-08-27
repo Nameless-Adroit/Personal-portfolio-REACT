@@ -1,4 +1,6 @@
 import { Link } from "react-router";
+import {SkillCard} from "../../components/SkillCard/SkillCard";
+import { skills } from "./DorasiaSkills";
 import dorasiaImage from "../../assets/images/dorasia.jpeg";
 import "../../assets/styles/individualPage.css";
 
@@ -48,50 +50,9 @@ export function Dorasia() {
         <h2>My Skills</h2>
         <p> Click a card to see specific details.</p>
         <div className="skills-grid">
-          <div className="skill-card">
-            <div className="skill-label">Programming Languages</div>
-            <div className="skill-list">Java · JavaScript · C</div>
-            <div className="skill-details hidden">
-              Object-Oriented Design, dynamic scripting, and system level
-              application tracking.
-            </div>
-          </div>
-          <div className="skill-card">
-            <div className="skill-label">Web Development</div>
-            <div className="skill-list">HTML · CSS · JavaScript</div>
-            <div className="skill-details hidden">
-              Building responsive, dynamic frontend platforms using CSS Grid,
-              Flexbox, and native DOM API interactions.
-            </div>
-          </div>
-          <div className="skill-card">
-            <div className="skill-label">Networking</div>
-            <div className="skill-list">
-              TCP/IP · IP Addressing · Network Configuration
-            </div>
-            <div className="skill-details hidden">
-              Subnetting mapping architectures, routing protocol deployments,
-              and structured infrastructure maintenance.
-            </div>
-          </div>
-          <div className="skill-card">
-            <div className="skill-label">Tools</div>
-            <div className="skill-list">Git · GitHub</div>
-            <div className="skill-details hidden">
-              Version control systems execution, remote branches collaboration
-              workflows, and source tracking configurations.
-            </div>
-          </div>
-          <div className="skill-card">
-            <div className="skill-label">Soft Skills</div>
-            <div className="skill-list">
-              Problem Solving · Teamwork · Critical Thinking
-            </div>
-            <div className="skill-details hidden">
-              Analytical problem solving under agile workflows, systemic
-              structural investigation, and cooperative solution development.
-            </div>
-          </div>
+          {skills.map((skill, index) => (
+            <SkillCard key={index} skills={skill} />
+          ))}
         </div>
       </section>
 

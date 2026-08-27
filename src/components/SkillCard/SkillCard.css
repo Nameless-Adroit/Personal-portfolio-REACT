@@ -1,0 +1,42 @@
+.skill-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.skill-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 229, 192, 0.08);
+}
+
+.skill-label {
+  font-family: "Syne", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.skill-list {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Styles for the JS Toggle feature */
+.skill-details {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.85rem;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+.hidden {
+  display: none;
+}
